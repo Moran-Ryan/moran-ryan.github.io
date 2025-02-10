@@ -1,4 +1,16 @@
 body {
-    background-color: dimgray;
+    background-color: #403f3f ;
     color: white;
+}
+
+a {
+    color: #1bbbfb 
+}
+
+a:visited {
+    color: #297eb0
+}
+
+a:active {
+    color: #fb501c 
 }
