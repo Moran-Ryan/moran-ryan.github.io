@@ -14,3 +14,18 @@ a:visited {
 a:active {
     color: #fb501c 
 }
+
+/* Nav link styling */
+nav a {
+    color: white;
+}
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    background-color: dimgray;
+}
+nav a:active {
+    color: lightgray;
+}
+/* End nav link styling */

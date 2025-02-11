@@ -2,3 +2,18 @@ body {
     background-color: white;
     color: black;
 }
+
+/* Nav link styling */
+nav a {
+    color: black;
+}
+nav a:visited {
+    color: black;
+}
+nav a:hover {
+    background-color: lightgray;
+}
+nav a:active {
+    color: dimgray;
+}
+/* End nav link styling */
