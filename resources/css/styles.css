@@ -21,6 +21,17 @@ h1, h2, h3, h4, h5, h6, p, li, ul, ol, a {
 a:hover {
     cursor: pointer;
 }
+
+    /* Applying offsets so header doesn't cover content */
+html {
+    scroll-padding-top: var(--nav-height);
+}
+
+main {
+    padding-top: var(--nav-height);
+}
+
+    /* End of offsets */
 /* End of universal styles */
 
 /* Nav bar styling */
@@ -74,7 +85,19 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+/* End of nav bar styling */
 
+/* About section styling */
+#about {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 50rem;
+}
 
+#about h2 {
+    margin: 0 0 1rem 0;
+}
+/* End of about section styling */
 
+/* Projects section styling */
 
