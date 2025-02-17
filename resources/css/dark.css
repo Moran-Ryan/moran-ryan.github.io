@@ -1,8 +1,14 @@
-body, header nav {
-    background-color: #403f3f ;
-    color: white;
+:root {
+    --foreground-color: lightgray;
+    --background-color: #1e1e1e;
+    --second-background: dimgray;
+    --main-color: #0277FC;
+    --accent-color: dimgray;
+    --nav-active: #a8a7a7;
+    --nav-hover: dimgray;
 }
 
+/* Make link status more easily readable in dark mode */ 
 a {
     color: #1bbbfb 
 }
@@ -15,17 +21,3 @@ a:active {
     color: #fb501c 
 }
 
-/* Nav link styling */
-nav a {
-    color: white;
-}
-nav a:visited {
-    color: white;
-}
-nav a:hover {
-    background-color: dimgray;
-}
-nav a:active {
-    color: lightgray;
-}
-/* End nav link styling */

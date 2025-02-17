@@ -1,20 +1,9 @@
-body, header nav {
-    background-color: white;
-    color: black;
-
+:root {
+    --foreground-color: black;
+    --background-color: white;
+    --second-background: white;
+    --main-color: #0277FC;
+    --accent-color: dimgray;
+    --nav-active: dimgray;
+    --nav-hover: lightgray;
 }
-
-/* Nav link styling */
-nav a {
-    color: black;
-}
-nav a:visited {
-    color: black;
-}
-nav a:hover {
-    background-color: lightgray;
-}
-nav a:active {
-    color: dimgray;
-}
-/* End nav link styling */
