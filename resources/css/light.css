@@ -6,4 +6,13 @@
     --accent-color: dimgray;
     --nav-active: dimgray;
     --nav-hover: lightgray;
+
+    /* Set dark/light mode icon icon colors so they're both readable. */
+    --day-color: var(--background-color);
+    --night-color: var(--foreground-color);
+}
+
+/* Position theme toggle background correctly */
+nav label #toggle-background {
+    right: 2.4rem;
 }

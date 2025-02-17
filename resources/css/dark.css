@@ -6,6 +6,10 @@
     --accent-color: dimgray;
     --nav-active: #a8a7a7;
     --nav-hover: dimgray;
+
+    /* Set dark/light mode icon icon colors so they're both readable. */
+    --day-color: var(--foreground-color);
+    --night-color: var(--background-color);
 }
 
 /* Make link status more easily readable in dark mode */ 
@@ -19,5 +23,10 @@ a:visited {
 
 a:active {
     color: #fb501c 
+}
+
+/* Position theme toggle background correctly */
+nav label #toggle-background {
+    right: 0.85rem;
 }
 

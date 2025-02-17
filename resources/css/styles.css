@@ -116,6 +116,55 @@ nav a:active {
 }
     /* End nav link styling */
 
+    /* Darkmode toggle styling */
+
+nav label {
+    display: flex;
+    align-items: center;
+    width: 3.5rem;
+    height: 100%;
+    padding: 0 0.25rem;
+
+}
+
+nav label #inner-toggle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    border: 2px solid var(--foreground-color);
+    border-radius: 1rem;
+    padding: 0;
+}
+
+nav label:hover {
+    cursor: pointer;
+    background-color: var(--nav-hover);
+}
+
+nav label svg {
+    height: 1rem;
+    z-index: 12;
+}
+
+#day-icon {
+    fill: var(--day-color);
+}
+
+#night-icon {
+    fill: var(--night-color);
+}
+
+nav label #toggle-background {
+    position: absolute;
+    height: 50%;
+    width: 1.75rem;
+    background-color: var(--nav-active);
+    border-radius: 1rem;
+}
+    /* End darkmode toggle styling */
+
 /* End of nav bar styling */
 
 /* About section styling */
