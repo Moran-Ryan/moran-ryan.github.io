@@ -1,0 +1,305 @@
+/* Variables */
+
+:root {
+    --nav-height: 2.5rem;
+    --primary-color: #5fe3f3;
+    --secondary-color: #2b3335;
+    --background-color: #161b1c;
+    --transparent-background: hsla(189, 14%, 10%, 0.6);
+}
+
+/* End of variables */
+
+/* Universal styles */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-color: var(--background-color);
+    color: white;
+    font-family: Orbitron, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Audiowide, Arial, sans-serif;  
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+.logo {
+    font-family: Audiowide, Arial, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: darkgrey;
+}
+
+a:active {
+    color: var(--primary-color);
+}
+
+.text-background {
+    background: var(--transparent-background);
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.text-container {
+    width: 80%;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+@media only screen and (max-width: 650px) {
+    .text-container {
+        width: 90%;
+    }
+}
+
+    /* Applying offsets so header doesn't cover content */
+html {
+    scroll-padding-top: var(--nav-height);
+}
+
+main {
+    padding-top: var(--nav-height);
+}
+
+    /* End of offsets */
+
+/* End of universal styles */
+
+/* Header/nav section */
+
+    /* Desktop header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .desktop {
+    display: flex;
+    width: 100%;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .desktop nav {
+    width: 100%;
+    display: flex;
+    height: var(--nav-height);
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--background-color);
+}
+
+header .logo {
+    font-size: 1.25rem;
+}
+
+header .desktop ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+header .desktop ul li:first-child {
+    margin-right: auto;
+}
+
+header .desktop li{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+}
+
+header a {
+    padding: 0 0.75rem;
+    text-decoration: none;
+    color: white;
+    line-height: var(--nav-height);
+}
+
+header a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+header a:active {
+    color: var(--primary-color);
+}
+
+    /* End desktop header */
+
+    /* Mobile header */
+
+.collapsible-menu {
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.collapsible-menu label {
+    display: block;
+    cursor: pointer;
+    background: url("../images/blue-hamburger-menu.png") no-repeat left center;
+    padding-left: 2rem;
+    background-size: 2rem;
+    line-height: var(--nav-height);
+    margin-left: 1rem;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0; 
+    margin: 0;
+}
+.collapsible-menu ul {
+    list-style: none;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.collapsible-menu a {
+    display: block;
+}
+
+input#menu {
+    display: none;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+    }
+}
+
+    /* End mobile header */
+
+/* End of header/nav section */
+
+/* About section */
+
+#about {
+    background-image: url("../images/about.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 3rem 0;
+    margin-bottom: 1rem;
+}
+
+/* End of about section */
+
+/* Sponsor section */ 
+
+#sponsor {
+    background-image: url("../images/sponsor.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+}
+
+/* End sponsor section */
+
+/* Partnered-stations section */
+
+#partner-stations {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.stations-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.station {
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 40rem;
+    max-width: 60rem;
+    padding: 1rem 0.25rem;
+}
+
+.station-img {
+    margin: 0 auto;
+}
+
+.station-img img {
+    max-width: 100%;
+}
+
+/* End partner-stations section */
+
+/* Footer section */
+
+footer {
+    padding: 1rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+}
+
+.footer-text p {
+    margin: 0.5rem auto;
+}

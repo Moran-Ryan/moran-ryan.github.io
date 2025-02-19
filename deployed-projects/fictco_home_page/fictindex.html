@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./resources/css/fictstyles.css">
+    <title>Fict Co. Home</title>
+    <!-- Google Fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Desktop/tablet format header-->
+        <div class="desktop">
+            <nav>
+                <a href="#splash" class="logo">Fict Co.</a>
+                <a href="../../index.html">Home</a>
+                <a href="#mission">Our Mission</a>
+                <a href="#products">Products</a>
+                <a href="#team">Our Team</a>
+            </nav>
+        </div>
+        <!-- Mobile format header -->
+         <!-- Based off of https://codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390 -->
+        <div class="collapsible-menu mobile">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="logo">Fict Co.</label>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="#splash" class="logo">Fict Co.</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="splash">
+            <h1>Fict Co.</h1>
+            <h2>Where reality is no obstacle</h2>
+        </section>
+        <section id="mission">
+            <div class="text-container">
+                <h2>Our Mission</h2>
+                <p><span class=logo>Fict Co.</span> is dedicated to supplying all of your sci-fi equipment needs.</p>
+            </div>
+        </section>
+        <section id="products">
+            <h2>What We Offer</h2>
+            <div class="products-container">                
+                <div id="robots" class="product-container">
+                    <div class="prod-title">
+                        <h2>Robotics & AI</h2>
+                    </div>
+                    <div class="prod-info">
+                        <div class="img-container">
+                            <img src="./resources/images/robots.jpg" /> <!-- Sourced from https://www.pinterest.com/pin/620511654895521592/ -->
+                        </div>
+                        <div class="product-desc">
+                            <p>We offer a wide range of robotics and AI products for use in many applications, such as domestic, industrial, agricultural, ship-borne, and military.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="space" class="product-container">
+                    <div class="prod-title">
+                        <h2>Space Technologies</h2>
+                    </div>
+                    <div class="prod-info">
+                        <div class="img-container">
+                            <img src="./resources/images/space.jpg" /> <!-- Sourced from https://conceptships.blogspot.com/2015/11/spaceships-by-isaac-hannaford.html -->
+                        </div>
+                        <div class="product-desc">
+                            <p>From ships and FTL drives, to stations and hab units, we offer a full compliment of products to get you into, traversing, and even living off-planet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="gravitic" class="product-container">
+                    <div class="prod-title">
+                        <h2>Propulsion Technologies</h2>
+                    </div>
+                    <div class="prod-info">
+                        <div class="img-container">
+                            <img src="./resources/images/gravitic.jpg" /> <!-- Sourced from https://www.productioncrate.com/objects/RenderCrate-Hovercar -->
+                        </div>
+                        <div class="product-desc">
+                            <p>We offer several exotic propulsion technologies including gravitic drives.</p>                    
+                        </div>
+                    </div>
+                </div>
+                <div id="weapons" class="product-container">
+                    <div class="prod-title">
+                        <h2>Weapons</h2>
+                    </div>
+                    <div class="prod-info">
+                        <div class="img-container">
+                            <img src="./resources/images/weapons.jpg" /> <!-- Sourced from https://www.artstation.com/artwork/qOgE2 -->
+                        </div>
+                        <div class="product-desc">
+                            <p>With a large selection of both conventional and exotic weapons technologies, we have something that's perfect for any use case.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="shields" class="product-container">
+                    <div class="prod-title">
+                        <h2>Energy Shielding</h2>
+                    </div>
+                    <div class="prod-info">
+                        <div class="img-container">
+                            <img src="./resources/images/shields.jpg" /> <!-- Sourced from https://jpconcepts.artstation.com/projects/w6blVV -->
+                        </div>
+                        <div class="product-desc">
+                            <p>Energy shield packages for vehicular and stationary applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="people">
+                <div class="person">
+                    <div class="portrait">
+                        <img src="./resources/images/person1.jpg" /> <!-- Sourced from https://www.pexels.com/search/business%20portrait/ -->
+                    </div>
+                    <div class="person-info">
+                        <h3>Eric B. Morgan</h3>
+                        <p>C.E.O., Co-founder</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="portrait">
+                        <img src="./resources/images/person2.jpg" /> <!-- Sourced from https://www.pexels.com/search/business%20portrait/ -->
+                    </div>
+                    <div class="person-info">
+                        <h3>Mary A. Romero</h3>
+                        <p>Co-founder, R&D Lead</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="portrait">
+                        <img src="./resources/images/person4.jpg" /> <!-- Sourced from https://www.pexels.com/search/business%20portrait/ -->
+                    </div>
+                    <div class="person-info">
+                        <h3>Kuroudo Itou</h3>
+                        <p>C.O.O., Chief Xeno-Enforcer, Technological Recovery Lead</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="portrait">
+                        <img src="./resources/images/person3.jpg" /> <!-- Sourced from https://www.pexels.com/search/business%20portrait/ -->
+                    </div>
+                    <div class="person-info">
+                        <h3>Kathleen J. Foster</h3>
+                        <p>Technological Recovery, R&D</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="portrait">
+                        <img src="./resources/images/person5.jpg" /> <!-- Sourced from https://www.pexels.com/search/business%20portrait/ -->
+                    </div>
+                    <div class="person-info">
+                        <h3>Leah P. Sato</h3>
+                        <p>C.F.O., Marketing & Communications Head</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2 class="logo">Fict Co.</h2>
+            <p>Contact@fictco.com</p>
+            <p>999-999-9999</p>
+            <p>Copyright <span class="logo">Fict Co.</span> 2025</p>
+        </footer>
+    </main>
+</body>
+</html>
