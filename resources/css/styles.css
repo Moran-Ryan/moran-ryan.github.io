@@ -19,6 +19,17 @@ body, header nav {
     color: var(--foreground-color);
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 580px) {
+    main {
+        width: 90%;
+    }
+}
+
 h1, h3, h4, h5, h6, li, ul, ol, p, a {
     padding: 0;
     margin: 0;
@@ -184,7 +195,7 @@ input#menu {
     fill: var(--foreground-color);
 }
 
-#nav-items {
+#nav-items { 
     right: calc((var(--collapsible-item-width)) - (var(--collapsible-item-width)) - (var(--collapsible-item-width)) - 2rem);
 
 }
@@ -251,7 +262,6 @@ input#menu:checked ~ #nav-items {
 /* About section styling */
 #about {
     margin: 0 auto;
-    width: 80%;
     max-width: 50rem;
 }
 
@@ -273,7 +283,6 @@ input#menu:checked ~ #nav-items {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    max-width: 80%;
     margin: 0 auto;
     padding-top: 1.5rem;
     gap: 2rem;
@@ -320,4 +329,10 @@ input#menu:checked ~ #nav-items {
 }
 .tech-icon{
     height: 1.5rem;
+}
+/* End of projects section styling */
+
+/* Contact page styling */
+#contact p {
+    text-align: center;
 }
