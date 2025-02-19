@@ -16,3 +16,11 @@
 nav label #toggle-background {
     right: 2.4rem;
 }
+
+/* Position theme toggle background for collapsible menu */
+@media only screen and (max-width: 580px) {
+    nav label #toggle-background {
+        right: 4.25rem;
+    }
+    
+}
